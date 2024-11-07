@@ -28,7 +28,7 @@
 
 ### 2. Background research
 
-   **Status: Ongoing**
+   **Status: Complete**
 
    *Learning objective*: Develop a basic physical understanding of the algorithms and data sets that we'll be working with.
 
@@ -82,7 +82,7 @@
 
 ### 5. Simulating HII region position-velocity diagrams
 
-   **Status: Ongoing**
+   **Status: Complete**
 
    *Learning objective*: Understand the relationship between Galactic structure and position-velocity data
 
@@ -97,7 +97,7 @@
 
 ### 6. Preparing your research environment - Part 2
 
-   **Status: New**
+   **Status: Ongoing**
 
    *Learning objective*: Prepare software environment
 
@@ -111,7 +111,7 @@
 
 ### 7. Understanding the `galstruct` model
 
-   **Status: New**
+   **Status: Ongoing**
 
    *Learning objective*: Understand the components of the `galstruct` model
 
@@ -125,7 +125,7 @@
 
 ### 8. Simulation Based Inference
 
-    **Status: New**
+    **Status: Ongoing**
 
     *Learning objective*: Learn how to use the python package `sbi`
 
@@ -139,3 +139,29 @@
     Ultimately, you will need to update the `learn_likelihood.py` program to work with the latest version of `sbi`. See what you can do, and we'll work on it together!
     </details>
 
+### 9. Testing Simulation Based Inference
+
+    **Status: New**
+
+    *Learning objective*: Practice efficient research methods
+
+    *Criteria for success*: Produce a summary report of results
+
+    <details>
+    Now that we have SBI working, we must start testing it! Run the
+    `learn_likelihood.py` program and experiment with the various
+    tunable parameters, including the number of simulations, the
+    "density estimator", the number of hidden features and transform
+    layers, and the training batch size.
+
+    Determine how you will assess the performance of the neural networks.
+    For example, you could generate longitude-velocity diagrams of
+    the "true" and "learned" likelihood following `plot_likelihood_varyaz0.py`,
+    or you could calculate summary statistics of the "learned" likelihood
+    following `tests/test_neural_nets.py`.
+
+    Think about how you will organize this work (e.g., will you write
+    a script that runs `learn_likelihood.py` many times?), then
+    generate a summary report of your findings (any format is
+    acceptable!).
+    </details>
